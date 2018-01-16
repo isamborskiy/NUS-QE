@@ -2,7 +2,7 @@
 \ProvidesClass{nus-student-qe}[2017/08/07 v0.1]
 %\RequirePackage{showframe} % DEBUG ONLY
 
-\LoadClass[12pt,a4paper]{extreport}
+\LoadClass[12pt, a4paper]{extreport}
 
 \RequirePackage{mathptmx}
 \RequirePackage{caption}
@@ -11,7 +11,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 
-\RequirePackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\RequirePackage[top=2cm, bottom=2cm, left=2.54cm, right=2.54cm]{geometry}
 
 \RequirePackage{fancyhdr}
 
@@ -99,7 +99,7 @@
 		\center
 		\includegraphics[scale=0.7]{images/nus-logo}\\[1.5cm]
 		
-		\textsc{\Huge GRADUATE RESEARCH PAPER}\\[3cm]
+		\textsc{\Huge QUALIFYING EXAMINATION PAPER}\\[3cm]
 		
 		\Huge \textbf{\thetitle}\\
 		\Large \theauthor\\[2.5cm]
