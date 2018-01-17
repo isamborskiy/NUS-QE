@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nus-student-qe}[2017/08/07 v0.3]
+\ProvidesClass{nus-student-qe}[2017/08/07 v0.4]
 %\RequirePackage{showframe} % DEBUG ONLY
 
 \LoadClass[12pt, a4paper]{extreport}
@@ -36,6 +36,7 @@
 
 \RequirePackage{graphicx}
 
+\RequirePackage{listings}
 \RequirePackage{algorithm}
 \RequirePackage{algorithmicx}
 \RequirePackage{algpseudocode}
@@ -130,6 +131,20 @@
 
 \newcommand{\acknowledgments}{
 	\chapter*{Acknowledgments}\label{chapter:acknowledgments}
+}
+
+\newcommand{\figures}{
+	\let\LaTeXStandardClearpage\clearpage
+	\let\clearpage\relax
+	\listoffigures
+	\let\clearpage\LaTeXStandardClearpage
+}
+
+\newcommand{\tables}{
+	\let\LaTeXStandardClearpage\clearpage
+	\let\clearpage\relax
+	\listoftables
+	\let\clearpage\LaTeXStandardClearpage
 }
 
 \newcommand{\printmainbibliography}[1]{

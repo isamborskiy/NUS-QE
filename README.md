@@ -1,4 +1,4 @@
-# NUS [PhD Qualifying Examination](https://www.fas.nus.edu.sg/prospective-students/graduate/phd-qualifying-examination.html) style v0.3
+# NUS [PhD Qualifying Examination](https://www.fas.nus.edu.sg/prospective-students/graduate/phd-qualifying-examination.html) style v0.4
 (tested for TeX Live 2017 + bibtex 0.99d)
 
 ## General data definition commands
@@ -9,10 +9,12 @@
 * `\publishdate{<day>}{<month>}{<year>}*` --- sets date (default: current date).
 
 ## Page markup commands
-* `\maketitle` --- generate title page using [predefined data](#general-data-definition-commands);
+* `\maketitle` --- generates title page using [predefined data](#general-data-definition-commands);
 * `\abstract` --- switches the chapter numbering to "Abstract";
 * `\acknowledgments` --- switches the chapter numbering to "Acknowledgments";
 * `\printmainbibliography` --- creates a bibliography list (with a correct title, also add it to the table of contents).
+* `\figures` --- generates list of figures
+* `\tables` --- generates list of tables
 
 ## Example
 Check [this example](https://github.com/Nilera/NUS-QE/blob/master/grp-report.tex) for more information.
