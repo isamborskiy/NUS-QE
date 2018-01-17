@@ -1,4 +1,4 @@
-# NUS [PhD Qualifying Examination](https://www.fas.nus.edu.sg/prospective-students/graduate/phd-qualifying-examination.html) style v0.2
+# NUS [PhD Qualifying Examination](https://www.fas.nus.edu.sg/prospective-students/graduate/phd-qualifying-examination.html) style v0.3
 (tested for TeX Live 2017 + bibtex 0.99d)
 
 ## General data definition commands

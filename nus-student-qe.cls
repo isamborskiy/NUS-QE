@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nus-student-qe}[2017/08/07 v0.1]
+\ProvidesClass{nus-student-qe}[2017/08/07 v0.3]
 %\RequirePackage{showframe} % DEBUG ONLY
 
 \LoadClass[12pt, a4paper]{extreport}
@@ -7,6 +7,15 @@
 \RequirePackage{mathptmx}
 \RequirePackage{caption}
 \RequirePackage{floatrow}
+
+\RequirePackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
