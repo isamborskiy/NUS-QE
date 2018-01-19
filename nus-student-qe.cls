@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nus-student-qe}[2017/08/07 v0.4]
+\ProvidesClass{nus-student-qe}[2017/08/07 v0.5]
 %\RequirePackage{showframe} % DEBUG ONLY
 
 \LoadClass[12pt, a4paper]{extreport}
@@ -20,6 +20,8 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 
+\RequirePackage{url}
+
 \RequirePackage[top=2cm, bottom=2cm, left=2.54cm, right=2.54cm]{geometry}
 
 \RequirePackage{fancyhdr}
@@ -36,7 +38,6 @@
 
 \RequirePackage{graphicx}
 
-\RequirePackage{listings}
 \RequirePackage{algorithm}
 \RequirePackage{algorithmicx}
 \RequirePackage{algpseudocode}
@@ -149,6 +150,6 @@
 
 \newcommand{\printmainbibliography}[1]{
 	\addcontentsline{toc}{chapter}{Bibliography}
+	\bibliographystyle{plainurl}
 	\bibliography{#1} 
-	\bibliographystyle{ieeetr}
 }
