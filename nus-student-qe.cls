@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nus-student-qe}[2017/08/07 v0.5]
+\ProvidesClass{nus-student-qe}[2017/08/07 v0.6]
 %\RequirePackage{showframe} % DEBUG ONLY
 
 \LoadClass[12pt, a4paper]{extreport}
@@ -26,7 +26,7 @@
 
 \RequirePackage{fancyhdr}
 
-\RequirePackage{enumitem}
+\RequirePackage[inline,shortlabels]{enumitem}
 \setlist{nosep}
 
 \RequirePackage{setspace}
@@ -41,6 +41,18 @@
 \RequirePackage{algorithm}
 \RequirePackage{algorithmicx}
 \RequirePackage{algpseudocode}
+
+\RequirePackage{listings}
+\RequirePackage{color}
+\lstset{
+	numbers=left,
+	stepnumber=1,
+	showstringspaces=false,
+	tabsize=1,
+	breaklines=true,
+	breakatwhitespace=false,
+	escapechar=|
+}
 
 \RequirePackage{etoolbox}
 
@@ -57,7 +69,7 @@
 
 \floatsetup[figure]{style=plain, capposition=bottom}
 \captionsetup[figure]{
-	labelsep=endash,
+	labelsep=period,
 	singlelinecheck=false,
 	labelfont={normalsize,md},
 	justification=centering,
@@ -66,19 +78,19 @@
 
 \floatsetup[table]{style=plain, capposition=top}
 \captionsetup[table]{
-	labelsep=endash,
+	labelsep=period,
 	singlelinecheck=false,
 	labelfont={normalsize,md},
-	justification=justified,
+	justification=centering,
 	position=top
 }
 
 \floatsetup[algorithm]{style=plain, capposition=top}
 \captionsetup[algorithm]{
-	labelsep=endash,
+	labelsep=period,
 	singlelinecheck=false,
 	labelfont={normalsize,md},
-	justification=justified,
+	justification=centering,
 	position=top
 }
 
@@ -113,7 +125,7 @@
 		\textsc{\Huge QUALIFYING EXAMINATION PAPER}\\[3cm]
 		
 		\Huge \textbf{\thetitle}\\
-		\Large \theauthor\\[2.5cm]
+		\Large \theauthor\\[2cm]
 		
 		\Large Supervisor: \thesupervisor\\[1cm]
 		
