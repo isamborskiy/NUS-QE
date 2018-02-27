@@ -1,4 +1,4 @@
-# NUS [PhD Qualifying Examination](https://www.fas.nus.edu.sg/prospective-students/graduate/phd-qualifying-examination.html) style v0.6
+# NUS [PhD Qualifying Examination](https://www.fas.nus.edu.sg/prospective-students/graduate/phd-qualifying-examination.html) style v0.7
 (tested for TeX Live 2017 + bibtex 0.99d)
 
 ## General data definition commands
@@ -15,6 +15,7 @@
 * `\printmainbibliography` --- creates a bibliography list (with a correct title, also add it to the table of contents).
 * `\figures` --- generates list of figures
 * `\tables` --- generates list of tables
+* `\listings` --- generates list of listings
 
 ## Example
 Check [this example](https://github.com/Nilera/NUS-QE/blob/master/grp-report.tex) for more information.

@@ -5,7 +5,7 @@
 \LoadClass[12pt, a4paper]{extreport}
 
 \RequirePackage{mathptmx}
-\RequirePackage{caption}
+\RequirePackage[labelsep=period]{caption}
 \RequirePackage{floatrow}
 
 \RequirePackage{hyperref}
@@ -21,6 +21,7 @@
 \RequirePackage[english]{babel}
 
 \RequirePackage{url}
+\def\UrlBreaks{\do\/\do-}
 
 \RequirePackage[top=2cm, bottom=2cm, left=2.54cm, right=2.54cm]{geometry}
 
@@ -44,6 +45,7 @@
 
 \RequirePackage{listings}
 \RequirePackage{color}
+\RequirePackage[table,x11names]{xcolor}
 \lstset{
 	numbers=left,
 	stepnumber=1,
@@ -68,31 +70,9 @@
 }}
 
 \floatsetup[figure]{style=plain, capposition=bottom}
-\captionsetup[figure]{
-	labelsep=period,
-	singlelinecheck=false,
-	labelfont={normalsize,md},
-	justification=centering,
-	position=bottom
-}
-
 \floatsetup[table]{style=plain, capposition=top}
-\captionsetup[table]{
-	labelsep=period,
-	singlelinecheck=false,
-	labelfont={normalsize,md},
-	justification=centering,
-	position=top
-}
-
 \floatsetup[algorithm]{style=plain, capposition=top}
-\captionsetup[algorithm]{
-	labelsep=period,
-	singlelinecheck=false,
-	labelfont={normalsize,md},
-	justification=centering,
-	position=top
-}
+\floatsetup[listing]{style=plain, capposition=top}
 
 %%% commands declaration
 
@@ -157,6 +137,22 @@
 	\let\LaTeXStandardClearpage\clearpage
 	\let\clearpage\relax
 	\listoftables
+	\let\clearpage\LaTeXStandardClearpage
+}
+
+\renewcommand\lstlistlistingname{List of Listrings}
+
+\newcommand{\listings}{
+	\let\LaTeXStandardClearpage\clearpage
+	\let\clearpage\relax
+	\lstlistoflistings
+	\let\clearpage\LaTeXStandardClearpage
+}
+
+\newcommand{\algorithms}{
+	\let\LaTeXStandardClearpage\clearpage
+	\let\clearpage\relax
+	\listofalgorithms
 	\let\clearpage\LaTeXStandardClearpage
 }
 

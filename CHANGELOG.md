@@ -1,3 +1,11 @@
+# v0.7 (2018-02-27)
+### Fixes
+* fix long urls (now they do not get out of the page)
+* fix style of caption for listing
+
+### New features
+* add commands to generate list of listings (`\listings`) and algorithms (`\algorithms`)
+
 # v0.6 (2018-02-03)
 ### Fixes
 * fix caption for tables and algorithms
