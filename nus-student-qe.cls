@@ -140,7 +140,7 @@
 	\let\clearpage\LaTeXStandardClearpage
 }
 
-\renewcommand\lstlistlistingname{List of Listrings}
+\renewcommand\lstlistlistingname{List of Listings}
 
 \newcommand{\listings}{
 	\let\LaTeXStandardClearpage\clearpage
