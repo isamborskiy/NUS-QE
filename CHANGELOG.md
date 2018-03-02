@@ -1,3 +1,10 @@
+# v0.8 (2018-03-02)
+### Changes
+* increase space at the top of title page
+
+### New features
+* add command to insert blank page (`\afterpage{\blankpage}`)
+
 # v0.7 (2018-02-27)
 ### Fixes
 * fix long urls (now they do not get out of the page)

@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nus-student-qe}[2017/08/07 v0.6]
+\ProvidesClass{nus-student-qe}[2017/08/07 v0.8]
 %\RequirePackage{showframe} % DEBUG ONLY
 
 \LoadClass[12pt, a4paper]{extreport}
@@ -7,6 +7,8 @@
 \RequirePackage{mathptmx}
 \RequirePackage[labelsep=period]{caption}
 \RequirePackage{floatrow}
+
+\RequirePackage{afterpage}
 
 \RequirePackage{hyperref}
 \hypersetup{
@@ -100,6 +102,7 @@
 \renewcommand{\maketitle}{
 	\begin{titlepage}
 		\center
+		\vspace*{1cm}
 		\includegraphics[scale=0.7]{images/nus-logo}\\[1.5cm]
 		
 		\textsc{\Huge QUALIFYING EXAMINATION PAPER}\\[3cm]
@@ -116,6 +119,13 @@
 		{\large \thepublishdate}\\
 		\vfill
 	\end{titlepage}
+}
+
+\newcommand{\blankpage}{
+	\null
+	\thispagestyle{empty}
+	\addtocounter{page}{-1}
+	\newpage
 }
 
 \renewcommand{\abstract}{

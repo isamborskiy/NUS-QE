@@ -1,4 +1,4 @@
-# NUS [PhD Qualifying Examination](https://mysoc.nus.edu.sg/pg/research-based-qualifying-examination/) style v0.7
+# NUS [PhD Qualifying Examination](https://mysoc.nus.edu.sg/pg/research-based-qualifying-examination/) style v0.8
 (tested for TeX Live 2017 + bibtex 0.99d)
 
 ## General data definition commands
@@ -10,6 +10,7 @@
 
 ## Page markup commands
 * `\maketitle` --- generates title page using [predefined data](#general-data-definition-commands);
+* `\afterpage{\blankpage}` --- inserts empty page (to separate your title page before for two-sided printing)
 * `\abstract` --- switches the chapter numbering to "Abstract";
 * `\acknowledgments` --- switches the chapter numbering to "Acknowledgments";
 * `\printmainbibliography` --- creates a bibliography list (with a correct title, also add it to the table of contents).
