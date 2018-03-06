@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nus-student-qe}[2017/08/07 v0.8]
+\ProvidesClass{nus-student-qe}[2018/03/06 v0.8]
 %\RequirePackage{showframe} % DEBUG ONLY
 
 \LoadClass[12pt, a4paper]{extreport}
