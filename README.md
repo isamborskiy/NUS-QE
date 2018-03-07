@@ -3,7 +3,7 @@
 
 ## General data definition commands
 * `\author{<full name>}` --- sets full name of the author;
-* `\supervisor{<full name}` --- sets full name of the supervisor;
+* `\supervisor{<full name>}` --- sets full name of the supervisor;
 * `\title{<text>}` --- sets work title;
 * `\department{<text>}*` --- sets student department (default: "School of Computing");
 * `\publishdate{<day>}{<month>}{<year>}*` --- sets date (default: current date).
@@ -17,6 +17,10 @@
 * `\figures` --- generates list of figures
 * `\tables` --- generates list of tables
 * `\listings` --- generates list of listings
+* `\algorithms` --- generates list of algorithms
 
 ## Example
 Check [this example](https://github.com/Nilera/NUS-QE/blob/master/grp-report.tex) for more information.
+
+## See also
+[LaTeX style for NUS Slides](https://github.com/Nilera/NUS-Slides)
