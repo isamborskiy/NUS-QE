@@ -21,6 +21,3 @@
 
 ## Example
 Check [this example](https://github.com/Nilera/NUS-QE/blob/master/grp-report.tex) for more information.
-
-## See also
-[LaTeX style for NUS Slides](https://github.com/Nilera/NUS-Slides)
