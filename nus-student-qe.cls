@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nus-student-qe}[2018/03/06 v0.8]
+\ProvidesClass{nus-student-qe}[2018/03/13 v0.9]
 %\RequirePackage{showframe} % DEBUG ONLY
 
 \LoadClass[12pt, a4paper]{extreport}
@@ -59,6 +59,8 @@
 }
 
 \RequirePackage{etoolbox}
+
+\interfootnotelinepenalty=10000
 
 \patchcmd{\@makechapterhead}{\vspace*{50\p@}}{\vspace*{0pt}}{}{}
 \patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{\vspace*{0pt}}{}{}

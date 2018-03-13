@@ -1,3 +1,7 @@
+# v0.9 (2018-03-13)
+### Fixes
+* fix issue with split footnote
+
 # v0.8 (2018-03-02)
 ### Changes
 * increase space at the top of title page

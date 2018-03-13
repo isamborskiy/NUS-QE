@@ -1,4 +1,4 @@
-# NUS [PhD Qualifying Examination](https://mysoc.nus.edu.sg/pg/research-based-qualifying-examination/) style v0.8
+# NUS [PhD Qualifying Examination](https://mysoc.nus.edu.sg/pg/research-based-qualifying-examination/) style v0.9
 (tested for TeX Live 2017 + bibtex 0.99d)
 
 ## General data definition commands
